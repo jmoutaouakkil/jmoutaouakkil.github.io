@@ -1,4 +1,4 @@
-# Site de Jamal Moutaouakkil : professeur de mathématiques
+# Jamal Moutaouakkil : professeur de mathématiques
 
 Site statique, sans dépendance : trois fichiers, aucun framework, aucune
 bibliothèque externe. Les animations (cercle trigonométrique, Pythagore,
