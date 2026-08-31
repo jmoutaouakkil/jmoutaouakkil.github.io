@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jamal Moutaouakkil, professeur de mathématiques</title>
+<meta name="description" content="Jamal Moutaouakkil, professeur principal de mathématiques, 37 ans de lycée. Démonstrations animées, paradoxes, olympiades, préparation au baccalauréat.">
+<meta name="author" content="Jamal Moutaouakkil">
+<meta property="og:title" content="Jamal Moutaouakkil, professeur de mathématiques">
+<meta property="og:description" content="Les mathématiques, ça se voit. Démonstrations animées, paradoxes, olympiades.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0e14'/><text y='72' x='50' text-anchor='middle' font-size='62' fill='%2358c4dd' font-family='Georgia,serif'>&#960;</text></svg>">
+</head>
+<body>
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top">
+    <span class="nav__mark">JM</span>
+    <span class="nav__name">Jamal Moutaouakkil</span>
+  </a>
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="#professeur">Le professeur</a>
+    <a href="#demonstrations">Démonstrations</a>
+    <a href="#hasard">Paradoxes</a>
+    <a href="#olympiades">Olympiades</a>
+    <a href="#code">Algorithmique</a>
+    <a href="#contact" class="nav__cta">Contact</a>
+  </nav>
+  <button class="nav__burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main id="top">
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero grid-bg">
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="hero__id">
+        <span class="hero__id-name">Jamal Moutaouakkil</span>
+        <span class="hero__id-role">Professeur principal de mathématiques</span>
+      </p>
+      <h1>Les mathématiques,<br><em>ça se voit.</em></h1>
+      <p class="lead">
+        Trente-sept ans de tableau noir, de classes de lycée, d'olympiades et de
+        paradoxes. Tout ce que vous voyez ici est animé, jouable, et démontrable.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#demonstrations">Entrer dans la classe</a>
+        <a class="btn btn--ghost" href="#professeur">Le parcours</a>
+      </div>
+      <ul class="hero__facts">
+        <li><b>37</b><span>ans de lycée</span></li>
+        <li><b>19/20</b><span>inspection pédagogique</span></li>
+        <li><b>4</b><span>établissements</span></li>
+        <li><b>1988</b><span>première rentrée</span></li>
+      </ul>
+    </div>
+    <figure class="hero__viz">
+      <canvas id="c-hero" width="640" height="440" role="img"
+        aria-label="Animation : un point tourne sur le cercle trigonométrique et déroule la courbe du sinus."></canvas>
+      <figcaption>Le cercle trigonométrique qui déroule sa sinusoïde, la première image que je dessine en seconde.</figcaption>
+    </figure>
+  </div>
+  <a class="scroll-hint" href="#professeur" aria-label="Défiler vers le bas"><span></span></a>
+</section>
+
+<!-- ══════════════════ LE PROFESSEUR ══════════════════ -->
+<section class="section" id="professeur">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">01</span> Le professeur</p>
+    <div class="prof">
+      <div class="prof__bio reveal">
+        <h2>Enseigner les mathématiques comme on raconte une histoire.</h2>
+        <p>
+          Je m'appelle <b>Jamal Moutaouakkil</b>. J'enseigne les mathématiques au lycée
+          depuis 1988, en programme marocain et en programme français. Diplômé de
+          l'<b>École Normale Supérieure</b> (spécialité mathématiques), titulaire du
+          Ministère de l'Éducation Nationale.
+        </p>
+        <p>
+          Pendant sept ans, j'ai été membre de la <b>cellule pédagogique de l'Académie de
+          Meknès-Tafilalt</b>&nbsp;: formation, animation d'exposés, réflexion sur les
+          programmes. J'ai obtenu la note de <b>19/20</b> à l'inspection pédagogique.
+        </p>
+        <p>
+          Ce qui m'intéresse depuis toujours&nbsp;: rendre une idée <em>visible</em>.
+          Un paradoxe qu'on simule, une démonstration qu'on anime, un problème
+          d'olympiade qui résiste une semaine puis cède en trois lignes&nbsp;: c'est là que
+          les élèves basculent.
+        </p>
+        <div class="prof__actions">
+          <a class="btn btn--primary" href="#contact">Me contacter</a>
+          <a class="btn btn--ghost" href="assets/files/CV-Jamal-Moutaouakkil.docx" download>Télécharger le CV</a>
+        </div>
+      </div>
+
+      <div class="prof__timeline reveal">
+        <h3 class="tl__title">Parcours</h3>
+        <ol class="tl">
+          <li>
+            <span class="tl__date">depuis 2015</span>
+            <b>Groupe Scolaire Label Excellence</b>
+            <span class="tl__meta">Meknès · Professeur de mathématiques</span>
+          </li>
+          <li>
+            <span class="tl__date">1992-2018</span>
+            <b>Lycée Al Massira</b>
+            <span class="tl__meta">Meknès · Professeur de mathématiques</span>
+          </li>
+          <li>
+            <span class="tl__date">1991-1992</span>
+            <b>Lycée Moulay Ismail</b>
+            <span class="tl__meta">Meknès</span>
+          </li>
+          <li>
+            <span class="tl__date">1988-1991</span>
+            <b>Lycée Sijilmassa</b>
+            <span class="tl__meta">Er-Rachidia · Première affectation</span>
+          </li>
+          <li class="tl--alt">
+            <span class="tl__date">1998-2005</span>
+            <b>Cellule pédagogique</b>
+            <span class="tl__meta">Académie de Meknès-Tafilalt</span>
+          </li>
+          <li class="tl--alt">
+            <span class="tl__date">1988</span>
+            <b>École Normale Supérieure</b>
+            <span class="tl__meta">Diplôme, spécialité mathématiques</span>
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="cards reveal">
+      <article class="card">
+        <span class="card__icon" aria-hidden="true">∫</span>
+        <h3>Préparation au baccalauréat</h3>
+        <p>Annales, entraînement aux épreuves et gestion du temps, pour les deux bacs scientifiques.</p>
+      </article>
+      <article class="card">
+        <span class="card__icon" aria-hidden="true">∑</span>
+        <h3>Deux programmes</h3>
+        <p>Marocain et français, de la seconde à la terminale, sciences mathématiques incluses.</p>
+      </article>
+      <article class="card">
+        <span class="card__icon" aria-hidden="true">&lt;/&gt;</span>
+        <h3>Algorithmique</h3>
+        <p>Initiation des lycéens à la programmation&nbsp;: Python, AlgoBox, calculatrice scientifique.</p>
+      </article>
+      <article class="card">
+        <span class="card__icon" aria-hidden="true">◎</span>
+        <h3>Élèves en difficulté</h3>
+        <p>Modules de remédiation dédiés&nbsp;: reprendre les bases sans humilier, puis accélérer.</p>
+      </article>
+      <article class="card">
+        <span class="card__icon" aria-hidden="true">✶</span>
+        <h3>Exposés &amp; formation</h3>
+        <p>Jeux mathématiques, paradoxes des probabilités, interactions avec les autres disciplines.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ DÉMONSTRATIONS ══════════════════ -->
+<section class="section section--alt grid-bg" id="demonstrations">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">02</span> Démonstrations visuelles</p>
+    <h2 class="section__title">Une preuve qu'on regarde se retient mieux qu'une preuve qu'on recopie.</h2>
+
+    <!-- Pythagore -->
+    <div class="demo reveal">
+      <div class="demo__side">
+        <h3>Pythagore, sans une seule ligne de calcul</h3>
+        <p>
+          Un carré de côté <i>a</i>&nbsp;+&nbsp;<i>b</i>. À l'intérieur, quatre triangles
+          rectangles identiques. On ne les déforme pas, on ne les retourne pas&nbsp;:
+          <b>on les fait juste glisser</b>.
+        </p>
+        <p>
+          La surface jaune, celle que les triangles ne couvrent pas, ne change donc
+          jamais d'aire. Au départ c'est un carré de côté <i>c</i>. À l'arrivée, ce sont
+          deux carrés de côtés <i>a</i> et <i>b</i>.
+        </p>
+        <p class="formula">a² + b² = c²</p>
+        <div class="controls">
+          <button class="btn btn--small" id="pyth-play">Faire glisser</button>
+          <label class="slider">
+            <span>Position</span>
+            <input type="range" id="pyth-t" min="0" max="1000" value="0" aria-label="Position de l'animation">
+          </label>
+        </div>
+      </div>
+      <div class="demo__stage">
+        <canvas id="c-pyth" width="560" height="560" role="img"
+          aria-label="Démonstration animée du théorème de Pythagore par glissement de quatre triangles."></canvas>
+      </div>
+    </div>
+
+    <!-- Monte Carlo -->
+    <div class="demo demo--flip reveal">
+      <div class="demo__side">
+        <h3>Calculer π&nbsp;… en jetant des grains de riz</h3>
+        <p>
+          Un carré, un quart de disque, et des points tirés au hasard. La proportion de
+          points tombés dans le disque tend vers le rapport des aires,
+          c'est-à-dire <i>π</i>/4.
+        </p>
+        <p class="formula">π ≈ 4 × <span class="frac"><span>points dans le disque</span><span>points tirés</span></span></p>
+        <p class="note">
+          C'est la méthode de <b>Monte-Carlo</b>&nbsp;: la première fois que mes élèves
+          voient le hasard produire une constante universelle, il y a un silence dans la
+          classe. C'est aussi leur premier vrai programme Python.
+        </p>
+        <div class="controls">
+          <button class="btn btn--small" id="mc-toggle">Lancer</button>
+          <button class="btn btn--small btn--ghost" id="mc-reset">Réinitialiser</button>
+        </div>
+        <div class="readout">
+          <div><span class="readout__k">Points</span><b id="mc-total">0</b></div>
+          <div><span class="readout__k">Dans le disque</span><b id="mc-in">0</b></div>
+          <div class="readout--hero"><span class="readout__k">Estimation de π</span><b id="mc-pi">·</b></div>
+        </div>
+      </div>
+      <div class="demo__stage">
+        <canvas id="c-mc" width="520" height="520" role="img"
+          aria-label="Simulation de Monte-Carlo : des points aléatoires estiment la valeur de pi."></canvas>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ PARADOXES ══════════════════ -->
+<section class="section" id="hasard">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">03</span> Paradoxes &amp; jeux</p>
+    <h2 class="section__title">Le hasard a mauvais caractère. Il faut le prendre en main.</h2>
+    <p class="section__sub">
+      Les paradoxes des probabilités sont mon terrain de jeu préféré&nbsp;: l'intuition
+      se trompe, l'élève proteste, et il ne reste plus qu'à simuler pour trancher.
+    </p>
+
+    <!-- Monty Hall -->
+    <div class="panel reveal" id="monty">
+      <div class="panel__head">
+        <h3>Le paradoxe de Monty Hall</h3>
+        <p>
+          Trois portes. Derrière l'une, une voiture&nbsp;; derrière les deux autres, une
+          chèvre. Vous choisissez une porte. Le présentateur, <b>qui sait où est la
+          voiture</b>, ouvre une autre porte contenant une chèvre. Il vous propose de
+          changer d'avis. Faut-il changer&nbsp;?
+        </p>
+      </div>
+
+      <div class="doors" id="doors">
+        <button class="door" data-door="0" aria-label="Porte 1"><span class="door__num">1</span><span class="door__prize"></span></button>
+        <button class="door" data-door="1" aria-label="Porte 2"><span class="door__num">2</span><span class="door__prize"></span></button>
+        <button class="door" data-door="2" aria-label="Porte 3"><span class="door__num">3</span><span class="door__prize"></span></button>
+      </div>
+
+      <p class="monty__msg" id="monty-msg" role="status">Choisissez une porte pour commencer.</p>
+
+      <div class="controls controls--center" id="monty-choice" hidden>
+        <button class="btn btn--small" id="monty-stay">Je garde ma porte</button>
+        <button class="btn btn--small btn--primary" id="monty-switch">Je change de porte</button>
+      </div>
+      <div class="controls controls--center" id="monty-again" hidden>
+        <button class="btn btn--small btn--ghost" id="monty-replay">Rejouer</button>
+      </div>
+
+      <div class="sim">
+        <div class="sim__head">
+          <h4>Et si on jouait 10&nbsp;000 parties&nbsp;?</h4>
+          <button class="btn btn--small" id="sim-run">Simuler</button>
+        </div>
+        <div class="bars">
+          <div class="bar">
+            <div class="bar__track"><div class="bar__fill bar__fill--stay" id="bar-stay"></div></div>
+            <div class="bar__label">Garder <b id="pct-stay">·</b></div>
+          </div>
+          <div class="bar">
+            <div class="bar__track"><div class="bar__fill bar__fill--switch" id="bar-switch"></div></div>
+            <div class="bar__label">Changer <b id="pct-switch">·</b></div>
+          </div>
+        </div>
+        <p class="note">Théorie&nbsp;: 1/3 en gardant, 2/3 en changeant. La simulation ne négocie pas.</p>
+      </div>
+    </div>
+
+    <!-- Anniversaires -->
+    <div class="panel panel--split reveal" id="birthday">
+      <div>
+        <h3>Le paradoxe des anniversaires</h3>
+        <p>
+          Combien faut-il d'élèves dans une classe pour avoir une chance sur deux que
+          <b>deux d'entre eux soient nés le même jour</b>&nbsp;? La réponse surprend
+          toujours&nbsp;: <b>23</b>.
+        </p>
+        <label class="slider slider--big">
+          <span>Élèves dans la classe&nbsp;: <b id="bd-n">23</b></span>
+          <input type="range" id="bd-range" min="1" max="70" value="23" aria-label="Nombre d'élèves">
+        </label>
+        <p class="bd__result">
+          Probabilité d'au moins deux anniversaires identiques&nbsp;:
+          <b id="bd-p">50,7 %</b>
+        </p>
+        <p class="note">
+          On ne compare pas 23 élèves à une date, mais 253 <em>paires</em> d'élèves entre
+          elles. C'est tout le paradoxe.
+        </p>
+      </div>
+      <canvas id="c-bd" width="520" height="360" role="img"
+        aria-label="Courbe de la probabilité d'anniversaires communs en fonction du nombre d'élèves."></canvas>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ OLYMPIADES ══════════════════ -->
+<section class="section section--alt grid-bg" id="olympiades">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">04</span> Olympiades</p>
+    <h2 class="section__title">Le problème de la semaine.</h2>
+    <p class="section__sub">
+      Un tableau, une question courte, et une semaine pour la retourner dans tous les
+      sens. Voici quatre problèmes que je donne à mes équipes&nbsp;: aucun ne demande de
+      connaissance au-delà du lycée, tous demandent une idée.
+    </p>
+
+    <div class="probs reveal">
+
+      <article class="prob">
+        <header><span class="prob__tag">Arithmétique</span><h3>Cinq entiers</h3></header>
+        <p>
+          On vous donne cinq entiers quelconques. Montrer qu'on peut toujours en choisir
+          <b>trois</b> dont la somme est divisible par 3.
+        </p>
+        <details class="prob__reveal">
+          <summary>Un indice</summary>
+          <p>Ne regardez pas les nombres&nbsp;: regardez leurs restes dans la division par 3. Il n'y en a que trois possibles.</p>
+        </details>
+        <details class="prob__reveal">
+          <summary>La solution</summary>
+          <p>
+            Rangeons les cinq entiers en trois tiroirs selon leur reste modulo 3&nbsp;:
+            0, 1 ou 2.
+          </p>
+          <p>
+            <b>Cas 1</b>&nbsp;: un tiroir contient au moins trois nombres. Leurs restes sont
+            égaux, donc leur somme vaut 3<i>r</i> ≡ 0 (mod 3). Gagné.
+          </p>
+          <p>
+            <b>Cas 2</b>&nbsp;: aucun tiroir n'en contient trois, donc chacun en contient au
+            plus deux. Avec deux tiroirs seulement on logerait au plus 4 nombres&nbsp;;
+            comme il y en a 5, <b>les trois tiroirs sont non vides</b>. On prend un nombre
+            dans chacun&nbsp;: la somme des restes vaut 0 + 1 + 2 = 3 ≡ 0 (mod 3). Gagné.
+          </p>
+          <p class="prob__moral">Morale&nbsp;: le principe des tiroirs ne calcule rien, il oblige.</p>
+        </details>
+      </article>
+
+      <article class="prob">
+        <header><span class="prob__tag">Combinatoire</span><h3>L'échiquier mutilé</h3></header>
+        <p>
+          On retire deux cases <b>diagonalement opposées</b> d'un échiquier 8×8.
+          Peut-on paver les 62 cases restantes avec 31 dominos (chacun couvrant deux
+          cases voisines)&nbsp;?
+        </p>
+        <details class="prob__reveal">
+          <summary>Un indice</summary>
+          <p>Un domino posé sur un échiquier recouvre toujours… combien de cases noires&nbsp;?</p>
+        </details>
+        <details class="prob__reveal">
+          <summary>La solution</summary>
+          <p><b>Non, c'est impossible.</b></p>
+          <p>
+            Sur un échiquier, deux cases voisines sont toujours de couleurs différentes&nbsp;:
+            un domino recouvre donc exactement <b>une case noire et une case blanche</b>.
+            Trente-et-un dominos recouvriraient 31 noires et 31 blanches.
+          </p>
+          <p>
+            Or les deux coins diagonalement opposés sont de <b>la même couleur</b>. En les
+            retirant, il reste 30 cases d'une couleur et 32 de l'autre. Le compte ne tombe
+            jamais juste&nbsp;: aucun pavage n'existe.
+          </p>
+          <p class="prob__moral">Morale&nbsp;: chercher un invariant coûte moins cher que chercher un contre-exemple.</p>
+        </details>
+      </article>
+
+      <article class="prob">
+        <header><span class="prob__tag">Algèbre</span><h3>Une identité qui se plie</h3></header>
+        <p>
+          Soit <i>x</i> un réel non nul tel que <span class="inline-f">x + 1/x = 3</span>.
+          Calculer <span class="inline-f">x³ + 1/x³</span>, sans jamais calculer <i>x</i>.
+        </p>
+        <details class="prob__reveal">
+          <summary>Un indice</summary>
+          <p>Développez (x + 1/x)³ et regardez ce qui réapparaît.</p>
+        </details>
+        <details class="prob__reveal">
+          <summary>La solution</summary>
+          <p>
+            On développe&nbsp;:
+            (x + 1/x)³ = x³ + 3x + 3/x + 1/x³ = x³ + 1/x³ + 3(x + 1/x).
+          </p>
+          <p>
+            Donc x³ + 1/x³ = (x + 1/x)³ − 3(x + 1/x) = 3³ − 3×3 = 27 − 9 = <b>18</b>.
+          </p>
+          <p class="prob__moral">Morale&nbsp;: la bonne inconnue n'est pas toujours celle qu'on nous donne.</p>
+        </details>
+      </article>
+
+      <article class="prob">
+        <header><span class="prob__tag">Géométrie</span><h3>Le berger et la rivière</h3></header>
+        <p>
+          Un berger part du point <b>A</b>, doit faire boire son troupeau à une rivière
+          rectiligne, puis rejoindre la bergerie en <b>B</b> (A et B du même côté de la
+          rivière). En quel point de la rive doit-il s'arrêter pour marcher le moins
+          possible&nbsp;?
+        </p>
+        <details class="prob__reveal">
+          <summary>Un indice</summary>
+          <p>Et si la bergerie était de l'<em>autre</em> côté de la rivière&nbsp;?</p>
+        </details>
+        <details class="prob__reveal">
+          <summary>La solution</summary>
+          <p>
+            Notons <b>B'</b> le symétrique de B par rapport à la rivière. Pour tout point
+            M de la rive, MB = MB' (symétrie). Donc AM + MB = AM + MB'.
+          </p>
+          <p>
+            Minimiser AM + MB' revient à joindre A à B' au plus court&nbsp;: par la ligne
+            droite. Le point cherché est donc <b>l'intersection du segment [AB'] avec la
+            rive</b>. On en déduit que l'angle d'arrivée sur la rive est égal à l'angle
+            de départ&nbsp;: c'est exactement la loi de la réflexion de la lumière.
+          </p>
+          <p class="prob__moral">Morale&nbsp;: les mathématiques et la physique racontent souvent la même histoire.</p>
+        </details>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ ALGORITHMIQUE ══════════════════ -->
+<section class="section" id="code">
+  <div class="wrap">
+    <p class="eyebrow"><span class="num">05</span> Algorithmique</p>
+    <h2 class="section__title">Dix lignes de Python valent parfois une heure de discours.</h2>
+    <p class="section__sub">
+      J'initie mes élèves à la programmation depuis des années&nbsp;: Python, AlgoBox,
+      calculatrice. Voici l'exemple que je garde pour la fin&nbsp;: la
+      <b>suite de Syracuse</b>, un problème que personne au monde n'a encore résolu, et
+      que n'importe quel élève de seconde peut programmer.
+    </p>
+
+    <div class="syr reveal">
+      <div class="syr__left">
+        <p class="rule">
+          Partez d'un entier <i>n</i>. S'il est pair, divisez-le par 2. S'il est impair,
+          remplacez-le par 3<i>n</i>&nbsp;+&nbsp;1. Recommencez.
+        </p>
+        <p>
+          <b>Conjecture de Collatz&nbsp;:</b> quel que soit le départ, on finit toujours
+          par tomber sur 1. Vérifié pour des milliards de nombres. Démontré pour aucun.
+        </p>
+        <div class="controls">
+          <label class="field">
+            <span>Départ</span>
+            <input type="number" id="syr-n" value="27" min="1" max="999999" step="1">
+          </label>
+          <button class="btn btn--small" id="syr-run">Calculer le vol</button>
+        </div>
+        <div class="readout">
+          <div><span class="readout__k">Durée du vol</span><b id="syr-steps">111</b></div>
+          <div><span class="readout__k">Altitude maximale</span><b id="syr-max">9232</b></div>
+        </div>
+        <pre class="code"><code><span class="c-k">def</span> <span class="c-f">syracuse</span>(n):
+    vol = [n]
+    <span class="c-k">while</span> n != <span class="c-n">1</span>:
+        <span class="c-k">if</span> n % <span class="c-n">2</span> == <span class="c-n">0</span>:
+            n = n // <span class="c-n">2</span>
+        <span class="c-k">else</span>:
+            n = <span class="c-n">3</span> * n + <span class="c-n">1</span>
+        vol.append(n)
+    <span class="c-k">return</span> vol
+
+<span class="c-cm"># 27 monte jusqu'à 9232 avant de retomber</span>
+<span class="c-f">print</span>(<span class="c-f">len</span>(syracuse(<span class="c-n">27</span>)) - <span class="c-n">1</span>)   <span class="c-cm"># 111 étapes</span></code></pre>
+      </div>
+      <div class="syr__right">
+        <canvas id="c-syr" width="600" height="420" role="img"
+          aria-label="Graphique du vol de la suite de Syracuse."></canvas>
+        <p class="note">Le « vol » de la suite&nbsp;: chaque point est une étape. On dirait un cours de bourse, c'est de l'arithmétique pure.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section class="section section--alt grid-bg" id="contact">
+  <div class="wrap wrap--narrow">
+    <p class="eyebrow"><span class="num">06</span> Contact</p>
+    <h2 class="section__title">Prochain chapitre&nbsp;: Casablanca.</h2>
+    <p class="section__sub">
+      Après trente-sept ans à Meknès, je cherche un établissement à Casablanca où
+      continuer&nbsp;: enseignement au lycée (programmes marocain et français),
+      préparation aux olympiades, remédiation, et formation de collègues.
+    </p>
+
+    <div class="contact">
+      <a class="contact__item" href="mailto:jmoutaouakkil@gmail.com">
+        <span class="contact__k">Email</span>
+        <b>jmoutaouakkil@gmail.com</b>
+      </a>
+      <a class="contact__item" href="tel:+212661231974">
+        <span class="contact__k">Téléphone</span>
+        <b>06 61 23 19 74</b>
+      </a>
+      <a class="contact__item" href="assets/files/CV-Jamal-Moutaouakkil.docx" download>
+        <span class="contact__k">Document</span>
+        <b>Curriculum vitæ ↓</b>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <p><b>Jamal Moutaouakkil</b> · Professeur principal de mathématiques</p>
+    <p class="foot__note">« Ce qui se conçoit bien s'énonce clairement. » Boileau</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
